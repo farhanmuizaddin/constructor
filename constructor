@@ -1,0 +1,16 @@
+<?php
+class komputer{
+    Public $prosesor;
+    public $memory;
+    public function __construct($prosesor, $memory = "12 GB")
+    {
+        $this->prosesor = $prosesor;
+        $this->memory = $memory;
+    }
+}
+$komputerSaya = new komputer ("Core I7", "8 GB");
+echo $komputerSaya->prosesor;
+echo " ";
+echo $komputerSaya->memory;
+
+?>
